@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+    }
+    .navbar-container {
+        width: 50%;
+        position: -webkit-sticky; /* For Safari */
+        position: sticky;
+        top: 0;
+        margin: auto;
+        z-index: 1000;
+        border-radius: 20px;
+
+    }
+.content{
+    background-color: #000000;
+}
+    nav {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+    .logo img {
+        height: 40px;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-links li {
+        margin: 0 10px;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px 10px;
+        transition: background 0.3s ease;
+    }
+    .nav-links a:hover {
+        background: #F0F0F0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .get-started {
+        background: #6c3;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    .get-started:hover {
+        background: #5a2;
+    }
+    .content {
+        padding: 20px;
+        height: 2000px; /* Added height for scrolling */
+        background-color: #F5F5F5;
+    }
+
+    .radius{
+        border-radius: 1.5rem;
+    }
