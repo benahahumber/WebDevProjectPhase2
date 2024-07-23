@@ -63,7 +63,7 @@ nav {
     transition: background 0.3s ease;
 }
 .get-started:hover {
-    background: #5BE9B9;
+    background: #76f0c7;
 }
 .content {
     padding: 20px;
@@ -247,7 +247,7 @@ a:hover {
 }
 
 .hero-button:hover {
-    background: #25cc94;
+    background: #76f0c7;
 }
 
 .brand {
@@ -349,6 +349,201 @@ h2 {
 }
 
 .sale-container button:hover {
-    background: #25cc94;
+    background: #76f0c7;
 }
 
+.special-offers {
+    padding: 20px;
+}
+
+.special-offers h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.shop-all {
+    float: right;
+    text-decoration: none;
+    background: #5BE9B9;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.offers-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.offer-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: calc(20% - 10px);
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.offer-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.sale-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #5BE9B9;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.offer-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+.add-to-cart {
+    background: #5BE9B9;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background: #76f0c7;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #797979;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.quotecontainer {
+    max-width: 600px;
+    padding: 20px;
+    position: relative;
+}
+
+.quote-icon {
+    font-size: 50px;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    color: #fff;
+}
+
+.quotetext {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.quoteauthor {
+    font-size: 16px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .hero {
+        padding-right: 20px;
+        padding-top: 100px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .features {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .category-item {
+        width: 100%;
+        height: auto;
+    }
+
+    .sale-container {
+        padding: 50px 0;
+    }
+
+    .special-offers h2 {
+        font-size: 20px;
+    }
+
+    .shop-all {
+        float: none;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .offers-container {
+        flex-direction: column;
+    }
+
+    .offer-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .quote {
+        height: auto;
+        padding: 20px;
+    }
+
+    .quote-icon {
+        font-size: 40px;
+        top: -10px;
+    }
+
+    .quotetext {
+        font-size: 18px;
+    }
+
+    .quoteauthor {
+        font-size: 14px;
+    }
+}
