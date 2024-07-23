@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!--Styles-->
+    <link rel="stylesheet" href="TomStyles.css">
+    <link rel="stylesheet" href="styles.css">
+    <!--Lottie-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+    <!--Chart script-->
+    <script src="//cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="//cdn.amcharts.com/lib/5/map.js"></script>
+    <script src="map.js"></script>
+    <script src="//cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <!--jquery lib-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="navbar-container radius">
+        <nav class="radius">
+            <div class="container-header">
+                <div class="logo">
+                    <a href="page1.html">
+                        <img src="Pear.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <ul class="nav-links radius">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Reviews</a></li>
+            </ul>
+            <button style="color: black; font-weight: 700;" class="btn get-started radius">SHOP NOW!</button>
+        </nav>
+    </div>
+    <!--Content-->
+    <main>
+        <!--Hero start-->
+        <div class="px-0 mb-5 position-relative" id="hero">
+            <div id="header-carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active position-relative">
+                        <img class="w-100"
+                            src="https://images.unsplash.com/photo-1514395659518-2e1c59302e99?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            style="max-height: 110vh">
+                        <div id="logo-home" class="logo-home1">
+                            <img src="PearCut.png" alt="Pear" class="pear-image">
+                            <div id="lottie-container" style="display: none;"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10 text-start">
+                                        <p class="fs-5 medium text-primary ">Call Us!</p>
+                                        <h1 class="display-1 text-white mb-5 animated slideInRight">WHERE TECHNOLOGY IS
+                                            INCOM<span class="text-primary">PEAR</span>ABLE</h1>
+                                        <a href="#form" class="btn bg-primary py-3 px-5 animated slideInRight radius">Contact
+                                            Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative">
+                        <img class="w-100"
+                            src="https://images.unsplash.com/photo-1497377825569-02ad2f9edb81?q=80&w=2689&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            style="max-height: 110vh">
+                        <div id="logo-home" class="logo-home2">
+                            <img src="PearCut.png" alt="Pear" class="pear-image">
+                            <div id="lottie-container" style="display: none;"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10 text-start">
+                                        <p class="fs-5 medium text-primary ">Comply</p>
+                                        <h1 class="display-1 text-white mb-5 animated slideInRight">Let us know what you think!</h1>
+                                        <a href="#form" class="btn bg-primary py-3 px-5 animated slideInRight radius">Contact
+                                            Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--carousel buttons-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+        <!--Hero end-->
+
+        <!--Contact info-->
+        <div class="container py-5">
+            <section id="info" class="row g-5 justify-content-center mb-5">
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="bg-light text-center h-100 p-5">
+                        <div class="btn-square bg-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                            <i class="bi bi-telephone-fill h1 text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Phone Number</h4>
+                        <p class="mb-2">+012 345 67890</p>
+                        <p class="mb-4">+012 345 67890</p>
+                        <a class="btn bg-primary px-4" href="tel:+0123456789">Call Now <i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="bg-light text-center h-100 p-5">
+                        <div class="btn-square bg-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                            <i class="bi bi-envelope-open-fill h1 text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Email Address</h4>
+                        <p class="mb-2">hello@pear.com</p>
+                        <p class="mb-4">support@pear.com</p>
+                        <a class="btn bg-primary px-4" href="mailto:info@example.com">Email Now <i
+                                class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="bg-light text-center h-100 p-5">
+                        <div class="btn-square bg-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                            </i><i class="bi bi-geo-alt-fill text-primary h1"></i>
+                        </div>
+                        <h4 class="mb-3">Office Address</h4>
+                        <p class="mb-2">123 Main St, San Francisco, CA 94111</p>
+                        <p class="mb-4">123 Main St, San Francisco, CA 941110</p>
+                        <a class="btn bg-primary px-4" href="https://goo.gl/maps/FsznshxgnULBGgkN9"
+                            target="blank">Direction <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!--Map-->
+            <section id="map">
+                <div class="row mb-5">
+                    <div class="col-12 map-container">
+                        <div id="chartdiv"></div>
+                    </div>
+                    <button id="reset-map-btn" class="btn ">Reset Map</button>
+                </div>
+            </section>
+            <div class="row g-5">
+                <!--form info-->
+                <section id="form-info" class="col-lg-6 pt-4">
+                    <p class="medium text-uppercase text-primary mb-2">Contact Us</p>
+                    <h1 class="display-5 mb-4 ">Get in touch</h1>
+                    <p class="mb-4">We'd love to hear from you. Contact us for any inquiries or assistance. Give us
+                        a few details and we’ll offer the best solution. Connect by phone, chat, email, and more.<a
+                            href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                    <div class="row g-4 pt-5 mt-5">
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle">
+                                    <i class="bi bi-phone text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6>Call Us</h6>
+                                    <span>+1 (555)
+                                        123-4567</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle">
+                                    <i class="bi bi-envelope text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6>Mail Us</h6>
+                                    <span>hello@pear.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--form input-->
+                <section id="form" class="col-lg-6">
+                    <form class="contact-form row">
+                        <div class="form-field col-lg-6">
+                            <input id="name" class="input-text js-input" type="text" required>
+                            <label class="label" for="name">Name</label>
+                        </div>
+                        <div class="form-field col-lg-6 ">
+                            <input id="email" class="input-text js-input" type="email" required>
+                            <label class="label" for="email">E-mail</label>
+                        </div>
+                        <div class="form-field col-lg-6 ">
+                            <input id="company" class="input-text js-input" type="text" required>
+                            <label class="label" for="company">Company Name</label>
+                        </div>
+                        <div class="form-field col-lg-6 ">
+                            <input id="phone" class="input-text js-input" type="text" required>
+                            <label class="label" for="phone">Contact Number</label>
+                        </div>
+                        <div class="form-field col-lg-12">
+                            <input id="message" class="input-text js-input" type="text" required>
+                            <label class="label" for="message">Message</label>
+                        </div>
+                        <div class="form-field col-lg-12">
+                            <button class="btn submit-button">Submit</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+        <!--FAQ-->
+        <section id="FAQ" class="container-fluid my-5 p-5">
+            <div class="container py-5">
+                <div class="col-lg-6 pt-4">
+                    <h1 class="display-5 mb-4 ">FAQs</h1>
+                    <p class="mb-4">Find answers to common questions and inquiries.</p>
+                </div>
+
+                <div class="accordion mb-5 " id="accordionFaq">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <strong>How do I place an order?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionFaq">
+                            <div class="accordion-body">
+                                To place an order, simply browse our product catalog, select the items
+                                you
+                                want, and proceed to checkout. Follow the prompts to provide your shipping and payment
+                                information, and confirm your order.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <strong>What payment methods are accepted?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionFaq">
+                            <div class="accordion-body">
+                                We accept major credit cards, such as Visa, Mastercard, and American
+                                Express. You can also choose to pay with PayPal for added convenience and security.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <strong>How long does shipping take?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionFaq">
+                            <div class="accordion-body">
+                                Shipping times vary depending on your location. Generally, orders are
+                                processed and shipped within 1-2 business days. Once shipped, you can expect delivery
+                                within
+                                3-5 business days.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <strong>Can I track my order?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionFaq">
+                            <div class="accordion-body">
+                                Yes, you can track your order by logging into your account and
+                                navigating
+                                to the order history section. From there, you will find the tracking information for
+                                your
+                                shipment.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <strong>What is your return policy?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionFaq">
+                            <div class="accordion-body">
+                                We offer a 30-day return policy for eligible products. If you are not
+                                satisfied with your purchase, you can initiate a return request through your account or
+                                contact our customer support for assistance.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="contact">
+                <img src="Pear.png" alt="Pear Logo" height="30" width="30">
+                <div>Address: 1713 Main St, San Francisco, CA 94101</div>
+                <div>Contact: 1-800-123-4567 <a href="mailto:info@example.com">info@example.com</a></div>
+                <div class="social-media">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path
+                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="links">
+                <div>
+                    <a href="#">Link One</a><br><br>
+                    <a href="#">Link Two</a><br><br>
+                    <a href="#">Link Three</a><br><br>
+                    <a href="#">Link Four</a><br><br>
+                    <a href="#">Link Five</a>
+                </div>
+                <br>
+                <div>
+                    <a href="#">Link Six</a><br><br>
+                    <a href="#">Link Seven</a><br><br>
+                    <a href="#">Link Eight</a><br><br>
+                    <a href="#">Link Nine</a><br><br>
+                    <a href="#">Link Ten</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer bottom-links">
+            <span>© 2024</span>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies Settings</a>
+        </div>
+    </div>
+
+    <!--scripts-->
+    <script src="script.js"></script>
+    <script src="TomScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
