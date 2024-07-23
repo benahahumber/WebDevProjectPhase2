@@ -134,7 +134,9 @@ nav {
         height: 70px;
     }
 
+
 }
+
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
     .navbar-container {
@@ -146,7 +148,9 @@ nav {
     }
 
 
+
 }
+
 
 /* Global style for all links */
 a {
@@ -551,3 +555,4 @@ h2 {
         font-size: 14px;
     }
 }
+
