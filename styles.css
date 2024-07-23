@@ -8,8 +8,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-}
+
 .navbar-container {
     width: 50%;
     position: -webkit-sticky; /* For Safari */
@@ -124,6 +123,7 @@ nav {
         padding: 15px;
         text-align: center;
         display: none;
+
     }
     .get-started.active {
         display: block;
@@ -131,17 +131,18 @@ nav {
     .logo img {
         height: 70px;
     }
-}
+
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
     .navbar-container {
         width: 100%;
+
     }
     .logo img {
         height: 50px;
     }
-}
+
 
 
 
@@ -161,6 +162,7 @@ a:hover {
     padding: 5%;
     align-items: center;
 }
+
 
 .footer {
     padding: 20px;
