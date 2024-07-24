@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var pearLogo = document.getElementById('logo-home');
-  var lottieContainer = document.getElementById('lottie-container');
+  var pearLogo1 = document.getElementById('logo-home1');
+  var pearLogo2 = document.getElementById('logo-home2');
+  var lottieContainer1 = pearLogo1.querySelector('#lottie-container');
+  var lottieContainer2 = pearLogo2.querySelector('#lottie-container');
   const fadeUpElements = document.querySelectorAll('.fade-up');
 
   //fade up part
@@ -19,48 +21,65 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //lottie parts
-  var animation = lottie.loadAnimation({
-    container: lottieContainer,
+  var animation1 = lottie.loadAnimation({
+    container: lottieContainer1,
     renderer: 'svg',
     loop: true,
     autoplay: false,
     path: 'light.json'
   });
 
-  pearLogo.addEventListener('mouseover', function () {
-    lottieContainer.style.display = 'block';
-    animation.play();
+  var animation2 = lottie.loadAnimation({
+    container: lottieContainer2,
+    renderer: 'svg',
+    loop: true,
+    autoplay: false,
+    path: 'light.json'
   });
 
-  pearLogo.addEventListener('mouseout', function () {
-    lottieContainer.style.display = 'none';
-    animation.stop();
+  pearLogo1.addEventListener('mouseover', function () {
+    lottieContainer1.style.display = 'block';
+    animation1.play();
   });
 
-  //event listener for form
-  const inputs = document.querySelectorAll('.input-text');
+  pearLogo1.addEventListener('mouseout', function () {
+    lottieContainer1.style.display = 'none';
+    animation1.stop();
+  });
 
+  pearLogo2.addEventListener('mouseover', function () {
+    lottieContainer2.style.display = 'block';
+    animation2.play();
+  });
+
+  pearLogo2.addEventListener('mouseout', function () {
+    lottieContainer2.style.display = 'none';
+    animation2.stop();
+  });
+//event listener for form
+const inputs = document.querySelectorAll('.input-text');
+
+inputs.forEach(input => {
+  input.addEventListener('input', function () {
+    if (this.value.trim() !== '') {
+      this.classList.add('not-empty');
+    } else {
+      this.classList.remove('not-empty');
+    }
+  });
+  input.dispatchEvent(new Event('input'));
+});
+
+//event listener to the form submit button
+const form = document.querySelector('.contact-form');
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  alert('Thank you for getting in touch! We will get back to you soon.');
+  form.reset();
   inputs.forEach(input => {
-    input.addEventListener('input', function () {
-      if (this.value.trim() !== '') {
-        this.classList.add('not-empty');
-      } else {
-        this.classList.remove('not-empty');
-      }
-    });
-    input.dispatchEvent(new Event('input'));
+    input.classList.remove('not-empty');
   });
-
-  //event listener to the form submit button
-  const form = document.querySelector('.contact-form');
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
-    alert('Thank you for getting in touch! We will get back to you soon.');
-    form.reset();
-    inputs.forEach(input => {
-      input.classList.remove('not-empty');
-    });
-  });
+});
 });
 
 //create root and chart
@@ -74,7 +93,7 @@ root.setThemes([
 var chart = root.container.children.push(
   am5map.MapChart.new(root, {
     panX: "rotateX",
-    //mat type
+    //map type
     projection: am5map.geoMercator()
   })
 );
@@ -109,9 +128,9 @@ pointSeries.bullets.push(function () {
     fill: am5.color(0xff0000),
     tooltipText: "{name}"
   });
-
+  //onclick settings
   circle.events.on("click", function (ev) {
-    alert("Clicked on " + ev.target.dataItem.dataContext.name)
+    location.href = "https://www.google.ca/maps/place/1563+Pennsylvania+Avenue+NW,+Washington,+DC+20006,+USA/@38.8976804,-77.0391047,17z/data=!4m14!1m7!3m6!1s0x89b7b7bcdecbb1df:0x715969d86d0b76bf!2sThe+White+House!8m2!3d38.8976763!4d-77.0365298!16zL20vMDgxc3E!3m5!1s0x89b7b7bcff631ae9:0xfe3182655c85cd4d!8m2!3d38.8986457!4d-77.0364987!16s%2Fg%2F11h4vm6k6_?entry=ttu";
   });
 
   return am5.Bullet.new(root, {
@@ -119,10 +138,11 @@ pointSeries.bullets.push(function () {
   });
 });
 
+//locations
 pointSeries.data.setAll([{
   long: -73.778137,
   lat: 40.641312,
-  name: "New York 2 Stores"
+  name: "New York: 2 Stores"
 }, {
   long: -122.4194,
   lat: 37.7749,
@@ -130,7 +150,7 @@ pointSeries.data.setAll([{
 }, {
   long: -122.3328,
   lat: 47.6061,
-  name: "Seattle 1 Store"
+  name: "Seattle: 1 Store"
 }]);
 
 //Reset button

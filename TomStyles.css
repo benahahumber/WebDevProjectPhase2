@@ -100,20 +100,23 @@ h6,
     z-index: 2;
     width: 5%; 
     height: auto;
+    z-index: 2;
 }
 .logo-home2 {
     position: absolute;
-    bottom: 20.5%; 
+    bottom: 19.5%; 
     right: 49.8%; 
     z-index: 2;
-    width: 3.3%; 
+    width: 3.5%; 
     height: auto;
     transform: rotate(300deg);
+    z-index: 2;
 }
 .pear-image {
     width: 100%;
     height: auto;
     display: block;
+    filter: brightness(0.4);
 }
 
 /*animations*/
@@ -177,7 +180,7 @@ h6,
     top: 20%;
     left: -20%;
     width: 150%;
-
+    z-index: 1;
 }
 
 #logo-home:hover img {
