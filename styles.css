@@ -510,9 +510,13 @@ h2 {
         margin-bottom: 20px;
     }
 
+    .category-grid {
+        flex-direction: column;
+    }
+
     .category-item {
         width: 100%;
-        height: auto;
+        margin-bottom: 20px;
     }
 
     .sale-container {
@@ -556,7 +560,6 @@ h2 {
         font-size: 14px;
     }
 }
-
 .slideshow-container {
     max-width: 2000px;
     position: relative;
