@@ -1,0 +1,30 @@
+.flex-container {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-around; /* Distributes space around items */
+    align-items: center; /* Centers items vertically */
+    padding: 10px; /* Adds some padding around the flex container */
+    background: rgb(255, 255, 255); /* Background color for the flex container */
+  }
+
+  .flex-item {
+    background-color: #f2f2f2; /* Light grey background for flex items */
+    border: 1px solid #ddd; /* Light grey border for flex items */
+    padding: 20px; /* Adds some padding inside the flex items */
+    margin: 10px; /* Adds some margin around the flex items */
+    font-size: 20px;
+    text-align: center;
+    flex-grow: 1; /* Allows flex items to grow to fill available space */
+  }
+
+  .card {
+    width: 200px;
+    height: 300px;
+    background-color: lightblue;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card.hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
