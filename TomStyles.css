@@ -183,7 +183,11 @@ h6,
     z-index: 1;
 }
 
-#logo-home:hover img {
+#logo-home1:hover img {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+#logo-home2:hover img {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
@@ -237,7 +241,7 @@ h6,
 /*Map*/
 #chartdiv {
     width: 100%;
-    min-width: 500px;
+    
     height: 500px;
     background-color: #222222;
     border-radius: 1.5rem;
@@ -347,4 +351,21 @@ h6,
     --bs-accordion-border-color: var(--secondary);
     --bs-accordion-border-width: 1px;
     --bs-accordion-body-padding-y: 3rem;
+}
+.carousel-item video {
+    max-height: 110vh;
+    width: 100%;
+    object-fit: cover;
+}
+/*extra media query*/
+@media (max-width: 425px)  {
+    .carousel-caption {
+       display: none;
+    }
+    .links {
+        display: none !important;
+    }
+    .mail {
+        display: none;
+    }
 }
