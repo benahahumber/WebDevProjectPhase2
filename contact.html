@@ -3,14 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Styles-->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="TomStyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!--Styles-->
+    <link rel="stylesheet" href="TomStyles.css">
+    <link rel="stylesheet" href="TomStyles2.css">
     <!--Lottie-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
     <!--Chart script-->
@@ -18,9 +19,12 @@
     <script src="//cdn.amcharts.com/lib/5/map.js"></script>
     <script src="map.js"></script>
     <script src="//cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-     <!--jquery lib-->
+    <!--jquery lib-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Contact</title>
+    <!--icon-->
+    <link rel="icon" href="Pear.png">
 </head>
 
 <body>
@@ -40,164 +44,305 @@
                 </div>
             </div>
             <ul class="nav-links radius">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Reviews</a></li>
+                <li><a href="page1.html">Home</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
             </ul>
-            <button style="color: black; font-weight: 700;" class="get-started radius">SHOP NOW!</button>
+            <button style="color: black; font-weight: 700;" class="btn get-started radius">SHOP NOW!</button>
         </nav>
     </div>
     <!--Content-->
     <main>
-        <!--Banner-->
-        <section id="home">
-            <div id="logo-home" class="logo-home">
-                <img src="Pear.png" alt="pear-logo" height="300px" />
-                <div id="lottie-container" style="display: none;"></div>
+        <!--Hero start-->
+        <div class="px-0 mb-5 position-relative" id="hero">
+            <div id="header-carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active position-relative">
+                        <img class="w-100"
+                            src="https://images.unsplash.com/photo-1514395659518-2e1c59302e99?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            style="max-height: 110vh">
+                        <div id="logo-home1" class="logo-home1">
+                            <img src="PearCut.png" alt="Pear" class="pear-image">
+                            <div id="lottie-container" style="display: none;"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10 text-start">
+                                        <p class="fs-5 medium text-primary ">Call Us!</p>
+                                        <h1 class="display-1 text-white mb-5 animated slideInRight">WHERE TECHNOLOGY IS
+                                            INCOM<span class="text-primary">PEAR</span>ABLE</h1>
+                                        <a href="#form"
+                                            class="btn bg-primary py-3 px-5 animated slideInRight radius">Contact
+                                            Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative">
+                        <img class="w-100"
+                            src="https://images.unsplash.com/photo-1497377825569-02ad2f9edb81?q=80&w=2689&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            style="max-height: 110vh">
+                        <div id="logo-home2" class="logo-home2">
+                            <img src="PearCut.png" alt="Pear" class="pear-image">
+                            <div id="lottie-container" style="display: none;"></div>
+                        </div>
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10 text-start">
+                                        <p class="fs-5 medium text-primary ">Comply</p>
+                                        <h1 class="display-1 text-white mb-5 animated slideInRight">Let us know what you
+                                            think!</h1>
+                                        <a href="#form"
+                                            class="btn bg-primary py-3 px-5 animated slideInRight radius">Contact
+                                            Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative">
+                        <video autoplay muted loop class="w-100" style="max-height: 110vh; object-fit: cover;">
+                            <source src="cat.mp4" type="video/mp4">
+                        </video>
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-10 text-start">
+                                        <p class="fs-5 medium text-primary ">‎ </p>
+                                        <h1 class="display-1 text-white mb-5 animated slideInRight">‎</h1>
+                                        <a href="#form"
+                                            class="btn bg-primary py-3 px-5 animated slideInRight radius">Contact
+                                            Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--carousel buttons-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <p class="tagline">WHERE TECHNOLOGY IS INCOM<span class="brand">PEAR</span>ABLE.</p>
-        </section>
+
+        </div>
+        <!--Hero end-->
 
         <!--Contact info-->
-        <section id="contact-info">
-            <div class="contact-header">
-                <p class="intro-text">Be creative and think outside the box.</p>
-                <h2>Map and Contact Information</h2>
-                <p class="description">We'd love to hear from you. Contact us for any inquiries or assistance.</p>
+        <div class="container py-5">
+            <section id="info" class="row g-5 justify-content-center mb-5">
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="bg-light text-center h-100 p-5">
+                        <div class="btn-square bg-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                            <i class="bi bi-telephone-fill h1 text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Phone Number</h4>
+                        <p class="mb-2">+012 345 67890</p>
+                        <p class="mb-4">+012 345 67890</p>
+                        <a class="btn bg-primary px-4">Call Now <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="bg-light text-center h-100 p-5">
+                        <div class="btn-square bg-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                            <i class="bi bi-envelope-open-fill h1 text-primary"></i>
+                        </div>
+                        <h4 class="mb-3">Email Address</h4>
+                        <p class="mb-2">hello@pear.com</p>
+                        <p class="mb-4">support@pear.com</p>
+                        <a class="btn bg-primary px-4">Email Now <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 fade-up">
+                    <div class="bg-light text-center h-100 p-5">
+                        <div class="btn-square bg-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                            </i><i class="bi bi-geo-alt-fill text-primary h1"></i>
+                        </div>
+                        <h4 class="mb-3">Office Address</h4>
+                        <p class="mb-2">123 Main St, San Francisco, CA 94111</p>
+                        <p class="mb-4">123 Main St, San Francisco, CA 941110</p>
+                        <a class="btn bg-primary px-4">Direction <i class="bi bi-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </section>
+            <!--Map-->
+            <section id="map">
+                <div class="row mb-5">
+                    <div class="col-12 map-container">
+                        <div id="chartdiv"></div>
+                    </div>
+                    <button id="reset-map-btn" class="btn ">Reset Map</button>
+                </div>
+            </section>
+            <div class="row g-5">
+                <!--form info-->
+                <section id="form-info" class="col-lg-6 pt-4">
+                    <p class="medium text-uppercase text-primary mb-2">Contact Us</p>
+                    <h1 class="display-5 mb-4 ">Get in touch</h1>
+                    <p class="mb-4">We'd love to hear from you. Contact us for any inquiries or assistance. Give us
+                        a few details and we’ll offer the best solution. Connect by phone, chat, email, and more.</p>
+                    <div class="row g-4 pt-5 mt-5">
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <div class=" btn-square bg-primary rounded-circle">
+                                    <i class="bi bi-phone text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6>Call Us</h6>
+                                    <span>+1 (555)
+                                        123-4567</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex">
+                                <div class=" btn-square bg-primary rounded-circle">
+                                    <i class="bi bi-envelope text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h6>Mail Us</h6>
+                                    <span class="mail">hello@pear.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--form input-->
+                <section id="form" class="col-lg-6">
+                    <form class="contact-form row">
+                        <div class="form-field col-lg-6">
+                            <input id="name" class="input-text js-input" type="text" required>
+                            <label class="label" for="name">Name</label>
+                        </div>
+                        <div class="form-field col-lg-6 ">
+                            <input id="email" class="input-text js-input" type="email" required>
+                            <label class="label" for="email">E-mail</label>
+                        </div>
+                        <div class="form-field col-lg-6 ">
+                            <input id="company" class="input-text js-input" type="text" required>
+                            <label class="label" for="company">Company Name</label>
+                        </div>
+                        <div class="form-field col-lg-6 ">
+                            <input id="phone" class="input-text js-input" type="text" required>
+                            <label class="label" for="phone">Contact Number</label>
+                        </div>
+                        <div class="form-field col-lg-12">
+                            <input id="message" class="input-text js-input" type="text" required>
+                            <label class="label" for="message">Message</label>
+                        </div>
+                        <div class="form-field col-lg-12">
+                            <button class="btn submit-button">Submit</button>
+                        </div>
+                    </form>
+                </section>
             </div>
-            <div class="contact-container">
-                <p><i class="bi bi-envelope"></i> <strong>Email</strong><br><a
-                        href="mailto:hello@pear.com">hello@pear.com</a></p>
-                <p><i class="bi bi-telephone"></i> <strong>Phone</strong><br><a href="tel:+15551234567">+1 (555)
-                        123-4567</a></p>
-                <p><i class="bi bi-geo-alt"></i> <strong>Office</strong><br>123 Main St, San Francisco, CA 94111</p>
-            </div>
-        </section>
+        </div>
 
-        <!--Map-->
-        <section class="map-container">
-            <div id="chartdiv"></div>
-            <button id="reset-map-btn" class="btn btn-primary">Reset Map</button>
-        </section>
-        <!--Conact Form-->
-        <section class="get-in-touch">
-            <h1 class="title">Get in touch</h1>
-            <form class="contact-form row">
-               <div class="form-field col-lg-6">
-                  <input id="name" class="input-text js-input" type="text" required>
-                  <label class="label" for="name">Name</label>
-               </div>
-               <div class="form-field col-lg-6 ">
-                  <input id="email" class="input-text js-input" type="email" required>
-                  <label class="label" for="email">E-mail</label>
-               </div>
-               <div class="form-field col-lg-6 ">
-                  <input id="company" class="input-text js-input" type="text" required>
-                  <label class="label" for="company">Company Name</label>
-               </div>
-                <div class="form-field col-lg-6 ">
-                  <input id="phone" class="input-text js-input" type="text" required>
-                  <label class="label" for="phone">Contact Number</label>
-               </div>
-               <div class="form-field col-lg-12">
-                  <input id="message" class="input-text js-input" type="text" required>
-                  <label class="label" for="message">Message</label>
-               </div>
-               <div class="form-field col-lg-12">
-                <button class="submit-button">Submit<i class="zmdi zmdi-arrow-right"></i></button>
-               </div>
-            </form>
-         </section>
         <!--FAQ-->
-        <section class="FAQ">
-            <div class="FAQ-header">
-                <h2>FAQs</h2>
-                <p class="description-faq">Find answers to common questions and inquiries.</p>
-            </div>
+        <section id="FAQ" class="container-fluid my-5 p-5">
+            <div class="container py-5">
+                <div class="col-lg-6 pt-4">
+                    <h1 class="display-5 mb-4 ">FAQs</h1>
+                    <p class="mb-4">Find answers to common questions and inquiries.</p>
+                </div>
 
-            <div class="accordion mb-5 " id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            How do I place an order?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>To place an order,</strong> simply browse our product catalog, select the items you
-                            want, and proceed to checkout. Follow the prompts to provide your shipping and payment
-                            information, and confirm your order.
+                <div class="accordion mb-5 " id="accordionFaq">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <strong>How do I place an order?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionFaq">
+                            <div class="accordion-body">
+                                To place an order, simply browse our product catalog, select the items
+                                you
+                                want, and proceed to checkout. Follow the prompts to provide your shipping and payment
+                                information, and confirm your order.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <strong>What payment methods are accepted?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionFaq">
+                            <div class="accordion-body">
+                                We accept major credit cards, such as Visa, Mastercard, and American
+                                Express. You can also choose to pay with PayPal for added convenience and security.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <strong>How long does shipping take?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionFaq">
+                            <div class="accordion-body">
+                                Shipping times vary depending on your location. Generally, orders are
+                                processed and shipped within 1-2 business days. Once shipped, you can expect delivery
+                                within
+                                3-5 business days.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <strong>Can I track my order?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionFaq">
+                            <div class="accordion-body">
+                                Yes, you can track your order by logging into your account and
+                                navigating
+                                to the order history section. From there, you will find the tracking information for
+                                your
+                                shipment.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <strong>What is your return policy?</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionFaq">
+                            <div class="accordion-body">
+                                We offer a 30-day return policy for eligible products. If you are not
+                                satisfied with your purchase, you can initiate a return request through your account or
+                                contact our customer support for assistance.
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            What payment methods are accepted?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>We accept major credit cards,</strong> such as Visa, Mastercard, and American
-                            Express. You can also choose to pay with PayPal for added convenience and security.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            How long does shipping take?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>Shipping times vary</strong> depending on your location. Generally, orders are
-                            processed and shipped within 1-2 business days. Once shipped, you can expect delivery within
-                            3-5 business days.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Can I track my order?
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>Yes, you can track your order</strong> by logging into your account and navigating
-                            to the order history section. From there, you will find the tracking information for your
-                            shipment.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            What is your return policy?
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>We offer a 30-day return policy</strong> for eligible products. If you are not
-                            satisfied with your purchase, you can initiate a return request through your account or
-                            contact our customer support for assistance.
-                        </div>
-                    </div>
-                </div>
-            </div>
             </div>
         </section>
     </main>
@@ -258,10 +403,14 @@
             <a href="#">Cookies Settings</a>
         </div>
     </div>
+
+    <!--scripts-->
     <script src="script.js"></script>
-    
     <script src="TomScript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

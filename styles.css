@@ -9,6 +9,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 .navbar-container {
     width: 50%;
     position: -webkit-sticky; /* For Safari */
@@ -62,7 +63,7 @@ nav {
     transition: background 0.3s ease;
 }
 .get-started:hover {
-    background: #5BE9B9;
+    background: #76f0c7;
 }
 .content {
     padding: 20px;
@@ -78,6 +79,7 @@ nav {
     .navbar-container {
         width: 50%;
     }
+    
     nav {
         flex-direction: column;
         align-items: flex-start;
@@ -131,6 +133,8 @@ nav {
     .logo img {
         height: 70px;
     }
+
+
 }
 
 /* Media Queries for Mobile */
@@ -142,6 +146,8 @@ nav {
     .logo img {
         height: 50px;
     }
+
+
 
 }
 
@@ -249,7 +255,7 @@ a:hover {
 }
 
 .hero-button:hover {
-    background: #25cc94;
+    background: #76f0c7;
 }
 
 .brand {
@@ -352,4 +358,264 @@ h2 {
 
 .sale-container button:hover {
     background: #25cc94;
+}
+
+.special-offers {
+    padding: 20px;
+}
+
+.special-offers h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.shop-all {
+    float: right;
+    text-decoration: none;
+    background: #5BE9B9;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.offers-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.offer-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: calc(20% - 10px);
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.offer-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.sale-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #5BE9B9;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.offer-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+.add-to-cart {
+    background: #5BE9B9;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background: #76f0c7;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #797979;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.quotecontainer {
+    max-width: 600px;
+    padding: 20px;
+    position: relative;
+}
+
+.quotetext {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.quoteauthor {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.show {
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    .hero {
+        padding-right: 20px;
+        padding-top: 100px;
+        align-items: center;
+        text-align: center;
     }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .features {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .category-grid {
+        flex-direction: column;
+    }
+
+    .category-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .sale-container {
+        padding: 50px 0;
+    }
+
+    .special-offers h2 {
+        font-size: 20px;
+    }
+
+    .shop-all {
+        float: none;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .offers-container {
+        flex-direction: column;
+    }
+
+    .offer-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .quote {
+        height: auto;
+        padding: 20px;
+    }
+
+    .quote-icon {
+        font-size: 40px;
+        top: -10px;
+    }
+
+    .quotetext {
+        font-size: 18px;
+    }
+
+    .quoteauthor {
+        font-size: 14px;
+    }
+}
+.slideshow-container {
+    max-width: 2000px;
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #ffffff;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 1
+    }
+  
+    to {
+      opacity: 1
+    }
+  }
+
+
