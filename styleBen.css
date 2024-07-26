@@ -75,3 +75,14 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+.carousel-caption2 {
+    position: centre;
+    right: 15%;
+    bottom: 1.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    background-color: black;
+}
