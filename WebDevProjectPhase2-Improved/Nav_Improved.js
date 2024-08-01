@@ -1,6 +1,6 @@
 window.onscroll = function() {
     if (window.scrollY > 0) {
-        document.getElementById("navbar").style.width = "88.5%";
+        document.getElementById("navbar").style.width = "90%";
         document.getElementById("navbar").classList.add("nav-scroll");
         document.getElementById("logo").style.display = "none";
     }
