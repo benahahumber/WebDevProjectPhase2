@@ -1,0 +1,109 @@
+.flex-container {
+    display: flex;
+    /* Enables Flexbox */
+    justify-content: space-around;
+    /* Distributes space around items */
+    align-items: center;
+    /* Centers items vertically */
+    padding: 10px;
+    /* Adds some padding around the flex container */
+    background: rgb(255, 255, 255);
+    /* Background color for the flex container */
+}
+
+.flex-item {
+    background-color: #f2f2f2;
+    /* Light grey background for flex items */
+    border: 1px solid #ddd;
+    /* Light grey border for flex items */
+    padding: 20px;
+    /* Adds some padding inside the flex items */
+    margin: 10px;
+    /* Adds some margin around the flex items */
+    font-size: 20px;
+    text-align: center;
+    flex-grow: 1;
+    /* Allows flex items to grow to fill available space */
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: lightblue;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card.hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.carousel {
+    margin-top: -110px;
+    width: 100%;
+}
+
+#about-us {
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    font-size: 5rem; /* Make the text bigger */
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: left 1s, opacity 1s;
+}
+#about {
+    color: #5BE9B9;
+}
+#us {
+    color: white;
+}
+.footer-container a {
+    text-decoration: none;
+    color: black;
+}
+.footer-container a:hover {
+    text-decoration: underline;
+}
+.bottom-link-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bottom-link-size {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 12px;
+}
+
+.carousel-item {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.carousel-inner img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption2 {
+    position: centre;
+    right: 15%;
+    bottom: 1.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    background-color: black;
+}
